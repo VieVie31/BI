@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>projet_de_ouf_malade</name>
-    <description />
-    <extended_description />
-    <trans_version />
+    <name>UN_debates_tf-idf</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
     <directory>/</directory>
@@ -12,12 +12,12 @@
     </parameters>
     <log>
       <trans-log-table>
-        <connection />
-        <schema />
-        <table />
-        <size_limit_lines />
-        <interval />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -42,37 +42,37 @@
           <id>LINES_READ</id>
           <enabled>Y</enabled>
           <name>LINES_READ</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_WRITTEN</id>
           <enabled>Y</enabled>
           <name>LINES_WRITTEN</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_UPDATED</id>
           <enabled>Y</enabled>
           <name>LINES_UPDATED</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_INPUT</id>
           <enabled>Y</enabled>
           <name>LINES_INPUT</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_OUTPUT</id>
           <enabled>Y</enabled>
           <name>LINES_OUTPUT</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_REJECTED</id>
           <enabled>Y</enabled>
           <name>LINES_REJECTED</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>ERRORS</id>
@@ -126,11 +126,11 @@
         </field>
       </trans-log-table>
       <perf-log-table>
-        <connection />
-        <schema />
-        <table />
-        <interval />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -208,10 +208,10 @@
         </field>
       </perf-log-table>
       <channel-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -274,10 +274,10 @@
         </field>
       </channel-log-table>
       <step-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -350,10 +350,10 @@
         </field>
       </step-log-table>
       <metrics-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -402,9 +402,9 @@
       </metrics-log-table>
     </log>
     <maxdate>
-      <connection />
-      <table />
-      <field />
+      <connection/>
+      <table/>
+      <field/>
       <offset>0.0</offset>
       <maxdiff>0.0</maxdiff>
     </maxdate>
@@ -415,7 +415,7 @@
     <feedback_shown>Y</feedback_shown>
     <feedback_size>50000</feedback_size>
     <using_thread_priorities>Y</using_thread_priorities>
-    <shared_objects_file />
+    <shared_objects_file/>
     <capture_step_performance>Y</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
     <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
@@ -435,16 +435,124 @@
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>do not remove the char ' 
+because of the stopwords</note>
+      <xloc>128</xloc>
+      <yloc>0</yloc>
+      <width>167</width>
+      <heigth>42</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>https://www.ranks.nl/stopwords</note>
+      <xloc>176</xloc>
+      <yloc>96</yloc>
+      <width>202</width>
+      <heigth>26</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>compute freq of all 
+words in all documents</note>
+      <xloc>1216</xloc>
+      <yloc>112</yloc>
+      <width>150</width>
+      <heigth>42</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>compute freq of all words
+for a specific document</note>
+      <xloc>544</xloc>
+      <yloc>416</yloc>
+      <width>165</width>
+      <heigth>42</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>FIXME : ce n'est pas une jointure qu'il faut faire !!!</note>
+      <xloc>1008</xloc>
+      <yloc>288</yloc>
+      <width>309</width>
+      <heigth>26</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>20</backgroundcolorgreen>
+      <backgroundcolorblue>23</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <order>
     <hop>
-      <from>read debates (change to out2.csv)</from>
-      <to>lower and removing few chars</to>
+      <from>read debates</from>
+      <to>droping chars</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>lower and removing few chars</from>
-      <to>droping original text column</to>
+      <from>droping chars</from>
+      <to>drop original column</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -555,17 +663,17 @@
     <hop>
       <from>Tri lignes 3</from>
       <to>join TF &amp; DF</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Tri lignes 4</from>
       <to>join TF &amp; DF</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>join TF &amp; DF</from>
       <to>compute tf-idf</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>compute tf-idf</from>
@@ -573,12 +681,7 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>droping original text column</from>
-      <to>simple stemming</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>simple stemming</from>
+      <from>naive stemming</from>
       <to>stemmed text</to>
       <enabled>Y</enabled>
     </hop>
@@ -592,33 +695,73 @@
       <to>concatenation of all debates</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>TF-IDF</from>
+      <to>Alimentation fichier</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>drop original column</from>
+      <to>del stopwords</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>del stopwords</from>
+      <to>drop with SW column</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>drop with SW column</from>
+      <to>rename column</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>rename column</from>
+      <to>naive stemming</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tri lignes 3</from>
+      <to>Produit cartésien</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tri lignes 4</from>
+      <to>Produit cartésien</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Produit cartésien</from>
+      <to>compute tf-idf</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
     <name>Ajout constantes</name>
     <type>Constant</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
         <name>id_jointure</name>
         <type>Number</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <nullif>1</nullif>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -634,29 +777,29 @@
   <step>
     <name>Ajout constantes 2</name>
     <type>Constant</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
         <name>id_join</name>
         <type>Number</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <nullif>1</nullif>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -670,15 +813,132 @@
     </GUI>
   </step>
   <step>
-    <name>Altération structure flux</name>
-    <type>SelectValues</type>
-    <description />
+    <name>Alimentation fichier</name>
+    <type>TextFileOutput</type>
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
+    </partitioning>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>/Users/olivier/Desktop/BI/UN_debates_tf-idf</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>session</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>year</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>country</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>4</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>word</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tf_idf</name>
+        <type>Number</type>
+        <format>#.#;-#.#</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1408</xloc>
+      <yloc>583</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Altération structure flux</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
     </partitioning>
     <fields>
       <select_unspecified>N</select_unspecified>
@@ -686,7 +946,7 @@
         <name>text_lower</name>
       </remove>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -695,63 +955,20 @@
     </remotesteps>
     <GUI>
       <xloc>512</xloc>
-      <yloc>320</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>stemmed text</name>
-    <type>SelectValues</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <fields>
-      <field>
-        <name>session</name>
-        <rename />
-      </field>
-      <field>
-        <name>year</name>
-        <rename />
-      </field>
-      <field>
-        <name>country</name>
-        <rename />
-      </field>
-      <field>
-        <name>stemming_text</name>
-        <rename>text_lower</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>512</xloc>
-      <yloc>128</yloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
     <name>DF</name>
     <type>SelectValues</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
@@ -771,7 +988,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -787,22 +1004,22 @@
   <step>
     <name>Décomposition de champs en lignes</name>
     <type>SplitFieldToRows3</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <splitfield>text_lower</splitfield>
     <delimiter> </delimiter>
     <newfield>word</newfield>
     <rownum>N</rownum>
-    <rownum_field />
+    <rownum_field/>
     <resetrownumber>Y</resetrownumber>
     <delimiter_is_regex>N</delimiter_is_regex>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -811,20 +1028,20 @@
     </remotesteps>
     <GUI>
       <xloc>512</xloc>
-      <yloc>224</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
     <name>Jointure comparaison lignes</name>
     <type>MergeJoin</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <join_type>INNER</join_type>
     <step1>Ajout constantes</step1>
@@ -835,7 +1052,7 @@
     <keys_2>
       <key>id_join</key>
     </keys_2>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -851,13 +1068,13 @@
   <step>
     <name>Jointure comparaison lignes 2</name>
     <type>MergeJoin</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <join_type>INNER</join_type>
     <step1>Tri lignes 2</step1>
@@ -872,7 +1089,7 @@
       <key>year</key>
       <key>country</key>
     </keys_2>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -888,13 +1105,13 @@
   <step>
     <name>TF</name>
     <type>SelectValues</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
@@ -905,7 +1122,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -921,13 +1138,13 @@
   <step>
     <name>TF-IDF</name>
     <type>SelectValues</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
@@ -947,7 +1164,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -963,20 +1180,20 @@
   <step>
     <name>Tri lignes</name>
     <type>SortRows</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>out</prefix>
     <sort_size>1000000</sort_size>
-    <free_memory />
+    <free_memory/>
     <compress>N</compress>
-    <compress_variable />
+    <compress_variable/>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
@@ -984,7 +1201,7 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
@@ -992,7 +1209,7 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
@@ -1000,11 +1217,11 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1020,20 +1237,20 @@
   <step>
     <name>Tri lignes 2</name>
     <type>SortRows</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>out</prefix>
     <sort_size>1000000</sort_size>
-    <free_memory />
+    <free_memory/>
     <compress>N</compress>
-    <compress_variable />
+    <compress_variable/>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
@@ -1041,7 +1258,7 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
@@ -1049,7 +1266,7 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
@@ -1057,11 +1274,11 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1070,27 +1287,27 @@
     </remotesteps>
     <GUI>
       <xloc>736</xloc>
-      <yloc>320</yloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
     <name>Tri lignes 3</name>
     <type>SortRows</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>out</prefix>
     <sort_size>1000000</sort_size>
-    <free_memory />
+    <free_memory/>
     <compress>N</compress>
-    <compress_variable />
+    <compress_variable/>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
@@ -1098,11 +1315,11 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1118,20 +1335,20 @@
   <step>
     <name>Tri lignes 4</name>
     <type>SortRows</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>out</prefix>
     <sort_size>1000000</sort_size>
-    <free_memory />
+    <free_memory/>
     <compress>N</compress>
-    <compress_variable />
+    <compress_variable/>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
@@ -1139,11 +1356,11 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
+        <collator_strength>2</collator_strength>
         <presorted>N</presorted>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1159,13 +1376,13 @@
   <step>
     <name>compute tf-idf</name>
     <type>Formula</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <formula>
       <field_name>tf_idf</field_name>
@@ -1173,9 +1390,9 @@
       <value_type>Number</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1191,13 +1408,13 @@
   <step>
     <name>concatenation of all debates</name>
     <type>MemoryGroupBy</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
@@ -1210,7 +1427,7 @@
         <valuefield> </valuefield>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1224,15 +1441,264 @@
     </GUI>
   </step>
   <step>
-    <name>drop all_text</name>
-    <type>SelectValues</type>
-    <description />
+    <name>del stopwords</name>
+    <type>Formula</type>
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>text_no_stop_words</field_name>
+      <formula_string>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+[text_lower]; " a "; " ");
+" about "; " ");
+" above "; " ");
+" after "; " ");
+" again "; " ");
+" against "; " ");
+" all "; " ");
+" am "; " ");
+" an "; " ");
+" and "; " ");
+" any "; " ");
+" are "; " ");
+" aren't "; " ");
+" as "; " ");
+" at "; " ");
+" be "; " ");
+" because "; " ");
+" been "; " ");
+" before "; " ");
+" being "; " ");
+" below "; " ");
+" between "; " ");
+" both "; " ");
+" but "; " ");
+" by "; " ");
+" can't "; " ");
+" cannot "; " ");
+" could "; " ");
+" couldn't "; " ");
+" did "; " ");
+" didn't "; " ");
+" do "; " ");
+" does "; " ");
+" doesn't "; " ");
+" doing "; " ");
+" don't "; " ");
+" down "; " ");
+" during "; " ");
+" each "; " ");
+" few "; " ");
+" for "; " ");
+" from "; " ");
+" further "; " ");
+" had "; " ");
+" hadn't "; " ");
+" has "; " ");
+" hasn't "; " ");
+" have "; " ");
+" haven't "; " ");
+" having "; " ");
+" he "; " ");
+" he'd "; " ");
+" he'll "; " ");
+" he's "; " ");
+" her "; " ");
+" here "; " ");
+" here's "; " ");
+" hers "; " ");
+" herself "; " ");
+" him "; " ");
+" himself "; " ");
+" his "; " ");
+" how "; " ");
+" how's "; " ");
+" i "; " ");
+" i'd "; " ");
+" i'll "; " ");
+" i'm "; " ");
+" i've "; " ");
+" if "; " ");
+" in "; " ");
+" into "; " ");
+" is "; " ");
+" isn't "; " ");
+" it "; " ");
+" it's "; " ");
+" its "; " ");
+" itself "; " ");
+" let's "; " ");
+" me "; " ");
+" more "; " ");
+" most "; " ");
+" mustn't "; " ");
+" my "; " ");
+" myself "; " ");
+" no "; " ");
+" nor "; " ");
+" not "; " ");
+" of "; " ");
+" off "; " ");
+" on "; " ");
+" once "; " ");
+" only "; " ");
+" or "; " ");
+" other "; " "); 
+" ought "; " ");
+" our "; " ");
+" ours	 "; " ");
+" ourselves "; " ");
+" out "; " ");
+" over "; " ");
+" own "; " ");
+" same "; " ");
+" shan't "; " ");
+" she "; " ");
+" she'd "; " ");
+" she'll "; " ");
+" she's "; " ");
+" should "; " ");
+" shouldn't "; " ");
+" so "; " ");
+" some "; " ");
+" such "; " ");
+" than "; " ");
+" that "; " ");
+" that's "; " ");
+" the "; " ");
+" their "; " ");
+" theirs "; " ");
+" them "; " ");
+" themselves "; " ");
+" then "; " ");
+" there "; " ");
+" there's "; " ");
+" these "; " ");
+" they "; " ");
+" they'd "; " ");
+" they'll "; " ");
+" they're "; " ");
+" they've "; " ");
+" this "; " ");
+" those "; " ");
+" through "; " ");
+" to "; " ");
+" too "; " ");
+" under "; " ");
+" until "; " ");
+" up "; " ");
+" very "; " ");
+" was "; " ");
+" wasn't "; " ");
+" we "; " ");
+" we'd "; " ");
+" we'll "; " ");
+" we're "; " ");
+" we've "; " ");
+" were "; " ");
+" weren't "; " ");
+" what "; " ");
+" what's "; " ");
+" when "; " ");
+" when's "; " ");
+" where "; " ");
+" where's "; " ");
+" which "; " ");
+" while "; " ");
+" who "; " ");
+" who's "; " ");
+" whom "; " ");
+" why "; " ");
+" why's "; " ");
+" with "; " ");
+" won't "; " ");
+" would "; " ");
+" wouldn't "; " ");
+" you "; " ");
+" you'd "; " ");
+" you'll "; " ");
+" you're "; " ");
+" you've "; " ");
+" your "; " ");
+" yours "; " ");
+" yourself "; " ");
+" yourselves "; " ")</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field/>
+    </formula>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>drop all_text</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
     </partitioning>
     <fields>
       <select_unspecified>N</select_unspecified>
@@ -1240,7 +1706,7 @@
         <name>all_text</name>
       </remove>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1254,15 +1720,15 @@
     </GUI>
   </step>
   <step>
-    <name>droping original text column</name>
+    <name>drop original column</name>
     <type>SelectValues</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <select_unspecified>N</select_unspecified>
@@ -1270,7 +1736,7 @@
         <name>text</name>
       </remove>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1284,24 +1750,115 @@
     </GUI>
   </step>
   <step>
-    <name>get all words</name>
-    <type>SplitFieldToRows3</type>
-    <description />
+    <name>drop with SW column</name>
+    <type>SelectValues</type>
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>text_lower</name>
+      </remove>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>192</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>droping chars</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <formula>
+      <field_name>text_lower</field_name>
+      <formula_string>SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(
+TRIM(LOWER([text]));
+"." ; " ");
+","; " ");
+"("; " ");
+")"; " ");
+"-"; " "); 
+"?"; " ");
+"!"; " ");
+"-"; " ");
+":"; " ");
+";"; " ");
+"$"; " ");
+"*"; " ");
+"["; " ");
+"]"; " ")
+</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field/>
+    </formula>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>192</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>get all words</name>
+    <type>SplitFieldToRows3</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
     </partitioning>
     <splitfield>all_text</splitfield>
     <delimiter> </delimiter>
     <newfield>words</newfield>
     <rownum>N</rownum>
-    <rownum_field />
+    <rownum_field/>
     <resetrownumber>Y</resetrownumber>
     <delimiter_is_regex>N</delimiter_is_regex>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1317,13 +1874,13 @@
   <step>
     <name>get all words count</name>
     <type>MemoryGroupBy</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
@@ -1336,7 +1893,7 @@
         <valuefield>Integer</valuefield>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1352,13 +1909,13 @@
   <step>
     <name>get count by word</name>
     <type>MemoryGroupBy</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
@@ -1371,10 +1928,10 @@
         <aggregate>count</aggregate>
         <subject>words</subject>
         <type>COUNT_ANY</type>
-        <valuefield />
+        <valuefield/>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1390,13 +1947,13 @@
   <step>
     <name>get freq</name>
     <type>Formula</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <formula>
       <field_name>tf</field_name>
@@ -1404,9 +1961,9 @@
       <value_type>Number</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1422,13 +1979,13 @@
   <step>
     <name>get freq 2</name>
     <type>Formula</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <formula>
       <field_name>df</field_name>
@@ -1436,9 +1993,9 @@
       <value_type>Number</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1454,15 +2011,15 @@
   <step>
     <name>join TF &amp; DF</name>
     <type>MergeJoin</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
-    <join_type>INNER</join_type>
+    <join_type>FULL OUTER</join_type>
     <step1>Tri lignes 3</step1>
     <step2>Tri lignes 4</step2>
     <keys_1>
@@ -1471,7 +2028,7 @@
     <keys_2>
       <key>words</key>
     </keys_2>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1485,155 +2042,15 @@
     </GUI>
   </step>
   <step>
-    <name>lower and removing few chars</name>
+    <name>naive stemming</name>
     <type>Formula</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
-    </partitioning>
-    <formula>
-      <field_name>text_lower</field_name>
-      <formula_string>SUBSTITUTE(
-  SUBSTITUTE(
-    SUBSTITUTE(
-      SUBSTITUTE(
-        SUBSTITUTE(
-          SUBSTITUTE(
-            SUBSTITUTE(
-              SUBSTITUTE(
-                SUBSTITUTE(
-                  SUBSTITUTE(
-                    SUBSTITUTE(
-SUBSTITUTE(
-                      TRIM(LOWER([text]));
-                 "." ; " ");
-                ","; " ");
-              "'"; " ");
-            "("; " ");
-          ")"; " ");
-        "-"; " "); 
-      "?"; " ");
-      "!"; " ");
-    "-"; " ");
-  ":"; " ");
-";"; " ");
-"$"; " ")
-</formula_string>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field />
-    </formula>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>192</xloc>
-      <yloc>32</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>read debates (change to out2.csv)</name>
-    <type>CsvInput</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <filename>/users/nfs/Etu7/3770317/Documents/bi/out3.csv</filename>
-    <filename_field />
-    <rownum_field />
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <encoding>UTF-8</encoding>
-    <fields>
-      <field>
-        <name>session</name>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal>,</decimal>
-        <group> </group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>year</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency />
-        <decimal>,</decimal>
-        <group> </group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>country</name>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal>,</decimal>
-        <group> </group>
-        <length>4</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>text</name>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal>,</decimal>
-        <group> </group>
-        <length>40389</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-    </fields>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>48</xloc>
-      <yloc>32</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>simple stemming</name>
-    <type>Formula</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <formula>
       <field_name>stemming_text</field_name>
@@ -1652,23 +2069,13 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
 SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
 SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
 SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
-SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
-SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
 [text_lower];
-" is "; " ");
-" and "; " ");
-" or "; " ");
-" for "; " ");
-" that "; " ");
+"'"; " ");
 "sses "; "ss ");
 "ies "; "i ");
 "s "; " ");
 "ed "; " ");
 "ing "; " "); 
-" a "; " ");
-" at "; " ");
-" in "; " ");
-" from "; " ");
 "at "; "ate ");
 "bl "; "ble ");
 "iz "; "ize ");
@@ -1727,9 +2134,9 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1738,20 +2145,183 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
-      <yloc>128</yloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>read debates</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>/Users/olivier/Desktop/BI/UN_debates.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>Y</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>session</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>year</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>country</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>text</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>40389</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>rename column</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>session</name>
+      </field>
+      <field>
+        <name>year</name>
+      </field>
+      <field>
+        <name>country</name>
+      </field>
+      <field>
+        <name>text_no_stop_words</name>
+        <rename>text_lower</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>192</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>stemmed text</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>session</name>
+      </field>
+      <field>
+        <name>year</name>
+      </field>
+      <field>
+        <name>country</name>
+      </field>
+      <field>
+        <name>stemming_text</name>
+        <rename>text_lower</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
     <name>word count by SYC</name>
     <type>MemoryGroupBy</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
@@ -1773,7 +2343,7 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
         <valuefield>Integer</valuefield>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1789,13 +2359,13 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
   <step>
     <name>word count by SYCW</name>
     <type>MemoryGroupBy</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
@@ -1820,7 +2390,7 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
         <valuefield>Integer</valuefield>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1829,7 +2399,77 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
     </remotesteps>
     <GUI>
       <xloc>640</xloc>
-      <yloc>320</yloc>
+      <yloc>352</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Produit cartésien</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <cache_size>500</cache_size>
+    <main/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>word</leftvalue>
+        <function>=</function>
+        <rightvalue>words</rightvalue>
+      </condition>
+    </compare>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage lignes</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to/>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue/>
+        <function>=</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
