@@ -523,10 +523,32 @@ for a specific document</note>
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>FIXME : ce n'est pas une jointure qu'il faut faire !!!</note>
-      <xloc>1008</xloc>
-      <yloc>288</yloc>
-      <width>309</width>
+      <note>join TF and DF to
+compute the ratio</note>
+      <xloc>1088</xloc>
+      <yloc>304</yloc>
+      <width>118</width>
+      <heigth>42</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>http://snowball.tartarus.org/algorithms/porter/stemmer.html</note>
+      <xloc>112</xloc>
+      <yloc>272</yloc>
+      <width>373</width>
       <heigth>26</heigth>
       <fontname>.SF NS Text</fontname>
       <fontsize>13</fontsize>
@@ -536,8 +558,8 @@ for a specific document</note>
       <fontcolorgreen>0</fontcolorgreen>
       <fontcolorblue>0</fontcolorblue>
       <backgroundcolorred>255</backgroundcolorred>
-      <backgroundcolorgreen>20</backgroundcolorgreen>
-      <backgroundcolorblue>23</backgroundcolorblue>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
       <bordercolorred>100</bordercolorred>
       <bordercolorgreen>100</bordercolorgreen>
       <bordercolorblue>100</bordercolorblue>
@@ -663,17 +685,17 @@ for a specific document</note>
     <hop>
       <from>Tri lignes 3</from>
       <to>join TF &amp; DF</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Tri lignes 4</from>
       <to>join TF &amp; DF</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>join TF &amp; DF</from>
       <to>compute tf-idf</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>compute tf-idf</from>
@@ -718,21 +740,6 @@ for a specific document</note>
     <hop>
       <from>rename column</from>
       <to>naive stemming</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Tri lignes 3</from>
-      <to>Produit cartésien</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Tri lignes 4</from>
-      <to>Produit cartésien</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Produit cartésien</from>
-      <to>compute tf-idf</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -857,8 +864,8 @@ for a specific document</note>
     <fields>
       <field>
         <name>session</name>
-        <type>String</type>
-        <format/>
+        <type>Integer</type>
+        <format>#</format>
         <currency/>
         <decimal/>
         <group/>
@@ -906,9 +913,9 @@ for a specific document</note>
       <field>
         <name>tf_idf</name>
         <type>Number</type>
-        <format>#.#;-#.#</format>
+        <format>#.#####;-#.#####</format>
         <currency/>
-        <decimal>,</decimal>
+        <decimal>.</decimal>
         <group> </group>
         <nullif/>
         <trim_type>none</trim_type>
@@ -1792,21 +1799,32 @@ SUBSTITUTE(SUBSTITUTE(
     </partitioning>
     <formula>
       <field_name>text_lower</field_name>
-      <formula_string>SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
-SUBSTITUTE(
+      <formula_string>"  "  &amp; 
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(
 SUBSTITUTE(
 TRIM(LOWER([text]));
+"/"; " ");
+"0" ; " ");
+"1" ; " ");
+"2" ; " ");
+"3" ; " ");
+"4" ; " ");
+"5" ; " ");
+"6" ; " ");
+"7" ; " ");
+"8" ; " ");
+"9" ; " ");
 "." ; " ");
 ","; " ");
 "("; " ");
@@ -1820,7 +1838,8 @@ TRIM(LOWER([text]));
 "$"; " ");
 "*"; " ");
 "["; " ");
-"]"; " ")
+"]"; " ") 
+&amp; "  "
 </formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
@@ -2019,7 +2038,7 @@ TRIM(LOWER([text]));
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>FULL OUTER</join_type>
+    <join_type>INNER</join_type>
     <step1>Tri lignes 3</step1>
     <step2>Tri lignes 4</step2>
     <keys_1>
@@ -2176,8 +2195,8 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
     <fields>
       <field>
         <name>session</name>
-        <type>String</type>
-        <format/>
+        <type>Integer</type>
+        <format>#</format>
         <currency/>
         <decimal>,</decimal>
         <group> </group>
@@ -2400,76 +2419,6 @@ SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(
     <GUI>
       <xloc>640</xloc>
       <yloc>352</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Produit cartésien</name>
-    <type>JoinRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <cache_size>500</cache_size>
-    <main/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>word</leftvalue>
-        <function>=</function>
-        <rightvalue>words</rightvalue>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1040</xloc>
-      <yloc>448</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filtrage lignes</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to/>
-    <send_false_to/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue/>
-        <function>=</function>
-        <rightvalue/>
-      </condition>
-    </compare>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1040</xloc>
-      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
