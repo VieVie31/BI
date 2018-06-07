@@ -12,6 +12,10 @@ This is the tf-idf calculation script :
 
 ![TF-IDF pentaho](./img/UN_debates_tf-idf.png)
 
+## Countries Cluster found with Words 
+
+![countries_clusters](./img/countries_clusters.png)
+
 ## Word Clouds Found
 
 ![wc1](./img/word_cloud.png)
