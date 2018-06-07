@@ -12,4 +12,7 @@ This is the tf-idf calculation script :
 
 ![TF-IDF pentaho](./img/UN_debates_tf-idf.png)
 
+## Word Clouds Found
 
+![wc1](./img/word_cloud.png)
+![wc2](./img/word_cloud_2.png)
